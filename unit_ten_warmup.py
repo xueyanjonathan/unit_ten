@@ -9,6 +9,7 @@ pygame.display.set_caption("Sandy Spring Friends School")
 ssfs = logo.Logo(mainSurface)
 ssfs.draw_rectangles()
 ssfs.draw_trellis()
+ssfs.draw_words()
 
 while True:
     for event in pygame.event.get():
