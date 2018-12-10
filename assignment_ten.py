@@ -39,7 +39,7 @@ y = window_height - height - space
 bricks = 9
 for rows in range(5):
     color = colors.pop()
-    for number in range(9):
+    for number in range(bricks):
         pyramid = brick.Brick(mainSurface, width, height, color)
         pyramid.draw_brick(x, y)
         x = x + width + space
