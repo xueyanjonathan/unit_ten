@@ -3,14 +3,12 @@ import pygame
 
 class Brick:
 
-    def __init__(self, main_surface):
+    def __init__(self, main_surface, width, height, color):
         self.main_surface = main_surface
-        self.window_width =   window_width
-        self.window_height = window_height
-        self.brick_width = (float(self.window_width) / 9) + 5
-        self.brick_height = brick_height
+        self.width = width
+        self.height = height
         self.color = color
 
-    def draw_brick(self):
-        pygame.draw.rect(self.main_surface, self.color, (x, y, self.brick_height, self.brick_width), 3)
+    def draw_brick(self, x, y):
+        pygame.draw.rect(self.main_surface, self.color, (x, y, self.width, self.height), 0)
         pygame.display.update()
